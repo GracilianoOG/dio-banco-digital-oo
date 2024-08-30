@@ -17,6 +17,10 @@ public class Conta {
     }
 
     public void sacar(double valor) {
+        if(valor > this.saldo) {
+            System.out.println("Saldo insuficiente para saque!");
+            return;
+        }
         this.saldo -= valor;
     }
 
