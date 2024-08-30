@@ -2,7 +2,7 @@ package bancodigital.conta;
 
 import bancodigital.Cliente;
 
-public abstract class Conta {
+public abstract class Conta implements IConta {
     private int numero;
     private int agencia;
     private double saldo;
