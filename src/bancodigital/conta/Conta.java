@@ -42,13 +42,10 @@ public abstract class Conta implements IConta {
     }
 
     protected void imprimirInformacoesConta() {
-        String divisor = "====================================";
-        System.out.println(divisor);
         System.out.println("Titular: " + this.cliente.getNome());
         System.out.println("Agencia: " + this.agencia);
         System.out.println("Número.: " + this.numero);
         System.out.printf("Saldo..: R$ %.2f\n", this.saldo);
-        System.out.println(divisor);
     }
 
     public int getNumero() {
