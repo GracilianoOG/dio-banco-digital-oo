@@ -11,7 +11,7 @@ public class Main {
         Conta cp = new ContaPoupanca(1111, 1, 1000, bob);
         Conta cc = new ContaCorrente(2222, 2, 500, bob);
 
-        cp.imprimirInformacoesConta();
-        cc.imprimirInformacoesConta();
+        cp.imprimirExtrato();
+        cc.imprimirExtrato();
     }
 }
