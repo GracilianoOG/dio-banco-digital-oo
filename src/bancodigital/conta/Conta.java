@@ -41,7 +41,7 @@ public abstract class Conta implements IConta {
         }
     }
 
-    public void imprimirInformacoesConta() {
+    protected void imprimirInformacoesConta() {
         String divisor = "====================================";
         System.out.println(divisor);
         System.out.println("Titular: " + this.cliente.getNome());
