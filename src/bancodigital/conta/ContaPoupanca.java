@@ -1,6 +1,6 @@
 package bancodigital.conta;
 
-import bancodigital.Cliente;
+import bancodigital.cliente.Cliente;
 
 public class ContaPoupanca extends Conta {
     public ContaPoupanca(int numero, int agencia, Cliente cliente) {

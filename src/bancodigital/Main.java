@@ -1,5 +1,6 @@
 package bancodigital;
 
+import bancodigital.cliente.Cliente;
 import bancodigital.conta.Conta;
 import bancodigital.conta.ContaCorrente;
 import bancodigital.conta.ContaPoupanca;

@@ -1,6 +1,6 @@
 package bancodigital.conta;
 
-import bancodigital.Cliente;
+import bancodigital.cliente.Cliente;
 
 public abstract class Conta implements IConta {
     private int numero;

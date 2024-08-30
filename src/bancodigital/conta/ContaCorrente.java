@@ -1,6 +1,6 @@
 package bancodigital.conta;
 
-import bancodigital.Cliente;
+import bancodigital.cliente.Cliente;
 
 public class ContaCorrente extends Conta {
     public ContaCorrente(int numero, int agencia, Cliente cliente) {
