@@ -44,6 +44,7 @@ public abstract class Conta {
     public void imprimirInformacoesConta() {
         String divisor = "====================================";
         System.out.println(divisor);
+        System.out.println("Titular: " + this.cliente.getNome());
         System.out.println("Agencia: " + this.agencia);
         System.out.println("Número.: " + this.numero);
         System.out.printf("Saldo..: R$ %.2f\n", this.saldo);
