@@ -16,12 +16,14 @@ public class Conta {
         this.saldo = saldo;
     }
 
-    public void sacar(double valor) {
+    public boolean sacar(double valor) {
         if(valor > this.saldo) {
             System.out.println("Saldo insuficiente para saque!");
-            return;
+            return false;
         }
+
         this.saldo -= valor;
+        return true;
     }
 
     public void depositar(double valor) {
@@ -29,8 +31,9 @@ public class Conta {
     }
 
     public void transferir(double valor, Conta conta) {
-        this.sacar(valor);
-        conta.depositar(valor);
+        if(this.sacar(valor)) {
+            conta.depositar(valor);
+        }
     }
 
     public int getNumero() {
