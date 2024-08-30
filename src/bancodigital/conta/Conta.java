@@ -1,19 +1,24 @@
 package bancodigital.conta;
 
+import bancodigital.Cliente;
+
 public abstract class Conta {
     private int numero;
     private int agencia;
     private double saldo;
+    private Cliente cliente;
 
-    public Conta(int numero, int agencia) {
+    public Conta(int numero, int agencia, Cliente cliente) {
         this.numero = numero;
         this.agencia = agencia;
+        this.cliente = cliente;
     }
 
-    public Conta(int numero, int agencia, double saldo) {
+    public Conta(int numero, int agencia, double saldo, Cliente cliente) {
         this.numero = numero;
         this.agencia = agencia;
         this.saldo = saldo;
+        this.cliente = cliente;
     }
 
     public boolean sacar(double valor) {
