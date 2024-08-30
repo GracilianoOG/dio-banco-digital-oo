@@ -6,8 +6,10 @@ import bancodigital.conta.ContaPoupanca;
 
 public class Main {
     public static void main(String[] args) {
-        Conta cp = new ContaPoupanca(1111, 1, 1000);
-        Conta cc = new ContaCorrente(2222, 2, 500);
+        Cliente bob = new Cliente("Bob");
+
+        Conta cp = new ContaPoupanca(1111, 1, 1000, bob);
+        Conta cc = new ContaCorrente(2222, 2, 500, bob);
 
         cp.imprimirInformacoesConta();
         cc.imprimirInformacoesConta();
