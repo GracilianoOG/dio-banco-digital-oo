@@ -1,4 +1,4 @@
-package bancodigital;
+package bancodigital.conta;
 
 public class ContaCorrente extends Conta {
     public ContaCorrente(int numero, int agencia) {

@@ -1,4 +1,4 @@
-package bancodigital;
+package bancodigital.conta;
 
 public abstract class Conta {
     private int numero;
